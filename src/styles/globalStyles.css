@@ -1,0 +1,41 @@
+:root {
+    --cor-brand-1: #4c6ef5;
+    --cor-brand-2: #364FC7;
+
+    --cor-gray-1: #191C1F;
+    --cor-gray-2: #212529;
+    --cor-gray-3: #343A40;
+    --cor-gray-4: #ADB5BD;
+    --cor-gray-5: #CED4DA;
+    --cor-gray-6: #EDF2FF;
+    --cor-gray-7: #F8F9FA;
+
+    --title-1-font-weight: 600;
+    --title-1-font-size: 52px;
+    --title-1-line-height: 140%;
+
+    --title-2-font-weight: 600;
+    --title-2-font-size: 40px;
+    --title-2-line-height: 160%;
+
+
+    --title-3-font-weight: 600;
+    --title-3-font-size: 32px;
+    --title-3-line-height: 160%;
+
+    --text-1-font-weight: 400;
+    --text-1-font-size: 20px;
+    --text-1-line-height: 150%;
+
+    --text-2-font-weight: 400;
+    --text-2-font-size: 18px;
+    --text-2-line-height: 150%;
+
+    --text-3-font-weight: 400;
+    --text-3-font-size: 16px;
+    --text-3-line-height: 150%;
+
+    --text-4-font-weight: 600;
+    --text-4-font-size: 16px;
+    --text-4-line-height: 150%;
+}
