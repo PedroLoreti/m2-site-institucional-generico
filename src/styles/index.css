@@ -3,7 +3,11 @@
 body {
     font-family: "Inter", sans-serif
 }
-
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 .header__container {
     display: flex;
     padding: 20px 236px;
@@ -98,12 +102,22 @@ body {
     background-color: var(--cor-gray-2);
 }
 
+.faq__container--father{
+    display: flex;
+    width: 620px;
+    padding-right: 87px;
+    flex-direction: column;
+    gap: 33px;
+    flex-shrink: 0;
+}
+
 .faq__container--left {
     display: flex;
     padding-right: 87px;
     flex-direction: column;
-    width: 620px;
     gap: 33px;
+    position: sticky;
+    top: 9rem;    
 }
 
 .faq__title--left {
@@ -122,6 +136,8 @@ body {
 
 .faq__button--left {
     padding: 20px 32px;
+    width: 266px;
+    height: 60px;
 
     border:  1px solid var(--cor-brand-1);
     background-color: var(--cor-brand-1);
@@ -141,7 +157,7 @@ body {
     line-height: var(--title-3-line-height);
     color: var(--cor-gray-6);
     text-align: center;
-    
+   
 }
 
 .faq__text--right {
@@ -169,6 +185,8 @@ body {
     width: 390px;
     height: 283px;
     gap: 35px;
+    position: sticky;
+    top: 10rem;    
     
     background-color: var(--cor-brand-1);
 }
@@ -238,7 +256,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
-    
+
     background-color: var(--cor-gray-1);
 }
