@@ -11,7 +11,7 @@ header {
 }
 .header__container {
     display: flex;
-    padding: 20px 236px;
+    padding: 20px clamp(1.375rem, -31.548rem + 51.442vw, 14.75rem);
     justify-content: space-between;
     align-items: center;
     
@@ -34,19 +34,21 @@ header {
 
 .banner__container {
     display: flex;
-    padding: 250px 236px;
+    padding: 250px clamp(1.563rem, -30.899rem + 50.721vw, 14.75rem);
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 44px;
 
     background-color: var(--cor-gray-2);
 }
 
 .banner_tittle {
-    font-size: var(--title-1-font-size);
+    font-size: clamp(2.938rem, 2.168rem + 1.202vw, 3.25rem);
     font-weight: var(--title-1-font-weight);
     line-height: var(--title-1-line-height);
     color: var(--cor-gray-6);
+    text-align: center;
 }
 
 .banner_tittle--blue {
@@ -54,10 +56,11 @@ header {
 }
 
 .banner_text {
-    font-size: var(--text-1-font-size);
+    font-size: clamp(1.188rem, 1.034rem + 0.24vw, 1.25rem);
     font-weight: var(--text-1-font-weight);
     line-height: var(--text-1-line-height);
     color: var(--cor-gray-4);
+    text-align: center;
 }
 
 .banner__button {
@@ -75,33 +78,34 @@ header {
 
 .about__container {
     display: flex;
-    padding: 82px 236px;
+    padding: 82px clamp(1.563rem, -30.899rem + 50.721vw, 14.75rem);
     align-items: center;
+    gap: 56px;
     justify-content: space-between;
-    gap: 56px; 
 
     background-color: var(--cor-gray-1);
 }
 
 .about__title {   
-    font-size: var(--title-2-font-size);
+    font-size: clamp(1.875rem, 0.337rem + 2.404vw, 2.5rem);
     font-weight: var(--title-2-font-weight);
     line-height: var(--title-2-line-height);
     color: var(--cor-gray-6);
+    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
 }
 
 .about__text {
-    width: 580px;
-
-    font-size: var(--text-1-font-size);
+    font-size: clamp(1.188rem, 1.034rem + 0.24vw, 1.25rem);
     font-weight: var(--text-1-font-weight);
     line-height: var(--text-1-line-height);
     color: var(--cor-gray-5);
+    text-align: justify;
+    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
 }
 
 .faq__container {
     display: flex;
-    padding: 82px 236px;
+    padding: 82px clamp(1.563rem, -30.899rem + 50.721vw, 14.75rem);
     gap: 56px;    
     justify-content: space-between;
 
@@ -110,16 +114,13 @@ header {
 
 .faq__container--father{
     display: flex;
-    width: 620px;
-    padding-right: 87px;
+    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
     flex-direction: column;
     gap: 33px;
-    flex-shrink: 0;
 }
 
 .faq__container--left {
     display: flex;
-    padding-right: 87px;
     flex-direction: column;
     gap: 33px;
     position: sticky;
@@ -127,17 +128,18 @@ header {
 }
 
 .faq__title--left {
-    font-size: var(--title-2-font-size);
+    font-size: clamp(1.875rem, 0.337rem + 2.404vw, 2.5rem);
     font-weight: var(--title-2-font-weight);
     line-height: var(--title-2-line-height);
     color: var(--cor-gray-6);
 }
 
 .faq__text--left {
-    font-size: var(--text-1-font-size);
+    font-size: clamp(1.188rem, 1.034rem + 0.24vw, 1.25rem);
     font-weight: var(--text-1-font-weight);
     line-height: var(--text-1-line-height);
     color: var(--cor-gray-4);
+    text-align: justify;
 }
 
 .faq__button--left {
@@ -158,43 +160,42 @@ header {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    width: 583px;
+    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
 }
 
 .faq__title--right {
-    font-size: var(--title-3-font-size);
+    font-size: clamp(1.563rem, 0.486rem + 1.683vw, 2rem);
     font-weight: var(--title-3-font-weight);
     line-height: var(--title-3-line-height);
     color: var(--cor-gray-6);
     text-align: center;
+    padding: 20px;
 }
 
 .faq__text--right {
-    font-size: var(--text-1-font-size);
+    font-size: clamp(1.188rem, 1.034rem + 0.24vw, 1.25rem);
     font-weight: var(--text-1-font-weight);
     line-height: var(--text-1-line-height);
     color: var(--cor-gray-4);
+    text-align: justify;
 }
 
 .comments__container {
     display: flex;
-    padding: 82px 236px;
+    padding: 82px clamp(1.563rem, -30.899rem + 50.721vw, 14.75rem);
     flex-direction: row-reverse;
     gap: 56px;
     justify-content: space-between;
 
     background-color: var(--cor-gray-2);
 }
-
 .comments__container--right-side {
-    padding-left: 86.4px;
+    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
 }
-
 .comments__container--right {
     display: flex;
-    padding: 80px 52px;
+    padding: 80px clamp(1.875rem, -1.51rem + 5.288vw, 3.25rem);
     flex-direction: column;
-    width: 390px;
     height: 283px;
     gap: 35px;
     position: sticky;
@@ -204,14 +205,14 @@ header {
 }
 
 .comments__title--right {
-    font-size: var(--title-2-font-size);
+    font-size: clamp(1.875rem, 0.337rem + 2.404vw, 2.5rem);
     font-weight: var(--title-2-font-weight);
     line-height: var(--title-2-line-height);
     color: var(--cor-gray-7);
 }
 
 .comments__text--right{
-    font-size: var(--text-1-font-size);
+    font-size: clamp(1.188rem, 1.034rem + 0.24vw, 1.25rem);
     font-weight: var(--text-1-font-weight);
     line-height: var(--text-1-line-height);
     color: var(--cor-gray-7); 
@@ -219,7 +220,7 @@ header {
 
 .comments__container--left {
     display: flex;
-    width: 620px;
+    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
     flex-direction: column;
     align-items: flex-start;
     gap: 82px;    
@@ -227,14 +228,12 @@ header {
 
 .comments__list--container {
     display: flex;
-    width: 620px;
     align-items: flex-start;
     gap: 16px;    
 }
 
 .comments__div--container {
     display: flex;
-    width: 192px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
@@ -242,29 +241,30 @@ header {
 }
 
 .comments__title--left {
-    font-size: var(--title-3-font-size);
+    font-size: clamp(1.563rem, 0.486rem + 1.683vw, 2rem);
     font-weight: var(--title-3-font-weight);
     line-height: var(--title-3-line-height);
     color: var(--cor-gray-6);
 }
 
 .comments__text--left {
-    font-size: var(--text-3-font-size);
+    font-size: clamp(0.938rem, 0.784rem + 0.24vw, 1rem);
     font-weight: var(--text-3-font-weight);
     line-height: var(--text-3-line-height);
     color: var(--cor-gray-4);
 }
 
 .comments__text--paragraph {
-    font-size: var(--text-2-font-size);
+    font-size: clamp(1rem, 0.692rem + 0.481vw, 1.125rem);
     font-weight: var(--text-2-font-weight);
     line-height: var(--text-2-line-height);
     color: var(--cor-gray-5);
+    text-align: justify;
 }
 
 footer {
     display: flex;
-    padding: 50px 775px;
+    padding: 50px clamp(12.5rem, -75.962rem + 138.221vw, 48.438rem);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -357,3 +357,73 @@ footer {
     border: 1px solid var(--cor-brand-2);
     background-color: var(--cor-brand-2);
 }
+
+@media (max-width: 1024px) {
+    .comments__list--container {
+        flex-direction: column;
+    }
+    .comments__div--container {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__container {
+        flex-direction: column;
+    }
+    .faq__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq__container--father {
+        width: 100%;
+    }
+    .faq__container--left {
+        align-items: center;
+        
+    }
+    .about__text, .faq__button--left, .faq__container--right, .faq__container--father {
+        width: 100%;     
+    }
+    .comments__container {
+       flex-direction: column;
+       align-items: center;
+    }
+    .comments__container--right-side {
+        width: 100%;
+    }
+    .comments__container--right {
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+    }
+    .comments__text--right {
+        width: 90%;
+    }
+    .comments__container--left {
+        align-items: center;
+    }
+    .comments__container--left {
+        width: 100%;
+        gap: 40px
+    }
+}
+
+@media (max-width: 425px) {
+    .header__button {
+        display: none;
+    }
+    .comments__container--right {
+        align-items: center;
+    }
+    .comments__title--right {
+        width: 90%;
+    }
+    .faq__title--right {
+        padding: 0;
+        padding-bottom: 20px;
+    }
+}
+
