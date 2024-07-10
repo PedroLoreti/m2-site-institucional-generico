@@ -1,4 +1,4 @@
-@import url(./src/styles/globalStyles.css);
+@import url(globalStyles.css);
 
 body {
     font-family: "Inter", sans-serif
@@ -82,7 +82,6 @@ header {
     align-items: center;
     gap: 56px;
     justify-content: space-between;
-
     background-color: var(--cor-gray-1);
 }
 
@@ -91,7 +90,7 @@ header {
     font-weight: var(--title-2-font-weight);
     line-height: var(--title-2-line-height);
     color: var(--cor-gray-6);
-    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
+    width: clamp(20rem, -124rem + 225vw, 78.5rem);
 }
 
 .about__text {
@@ -100,7 +99,7 @@ header {
     line-height: var(--text-1-line-height);
     color: var(--cor-gray-5);
     text-align: justify;
-    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
+    width: clamp(20rem, -124rem + 225vw, 78.5rem);
 }
 
 .faq__container {
@@ -114,7 +113,7 @@ header {
 
 .faq__container--father{
     display: flex;
-    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
+    width: clamp(20rem, -124rem + 225vw, 78.5rem);
     flex-direction: column;
     gap: 33px;
 }
@@ -160,7 +159,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
+    width: clamp(20rem, -124rem + 225vw, 78.5rem);
 }
 
 .faq__title--right {
@@ -190,7 +189,7 @@ header {
     background-color: var(--cor-gray-2);
 }
 .comments__container--right-side {
-    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
+    width: clamp(20rem, -124rem + 225vw, 78.5rem);
 }
 .comments__container--right {
     display: flex;
@@ -220,7 +219,7 @@ header {
 
 .comments__container--left {
     display: flex;
-    width: clamp(20rem, -1.429rem + 44.643vw, 38.75rem);
+    width: clamp(20rem, -124rem + 225vw, 78.5rem);
     flex-direction: column;
     align-items: flex-start;
     gap: 82px;    
